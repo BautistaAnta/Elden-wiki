@@ -5,8 +5,14 @@
     text-decoration: none;
     list-style: none;
 }
+.body-1{
+    color: #fff;
+    background-image: url(../img/fondo-todo.jpg);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 body{
-    background-color: #555;
     color: #fff;
 }
 iframe{
@@ -83,10 +89,6 @@ nav ul li a:hover{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url(../img/fondo-todo.jpg);
-    background-size: 100% 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 .div-main-contenedor{
     width: 70%;
@@ -167,16 +169,32 @@ nav ul li a:hover{
 
 .main-2{
     width: 100%;
-
+    text-align: center;
 }
-.div-main-2{
-    width: 100%;
+.main-2 h2{
+    font-size: 40px;
+    padding: 10px 0px;
+    background-color: #222;
+}
+.main-2 section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main-2-div{
+    width: 40%;
+    min-width: 350px;
+    text-align: center;
     border: solid #fff 1px;
+    border-radius: 30px;
 }
-.main-2 div h3{
+.main-2-div h3{
     font-size: 25px;
 }
-
+.main-2-div img{
+    float: left;
+    width: 50%;
+}
 
 /* Aside */
 
@@ -471,10 +489,7 @@ footer{
     grid-column: span 2;
 }
 
-/* @font-face {
-    font-family:'goth' ;
-    src: url(../fuentes/fuente-header.ttf);
-} */
+
 
 @media only screen and (max-width:700px) {
     header{
@@ -537,8 +552,9 @@ footer{
         grid-auto-rows: 100px;
     }
   }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:490px){
     header{
+        font-size: 15px;
         flex-direction: column;
         height: 30vh;
     }
@@ -553,6 +569,23 @@ footer{
     .hero{
         height: 54vh;
         background-size: cover;
+    }
+    footer{
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 20vh;
+    }
+    .redes{
+        flex-direction: row;
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .yo{
+        grid-row: 3/6;
+        grid-column: 1/4;
+    }
+    .yo img{
+        width: 30vw;
+        height: 60vw;
     }
 }
 
