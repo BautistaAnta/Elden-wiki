@@ -21,6 +21,9 @@ iframe{
     border: solid #fff 1px;
     background-color: #000;
 }
+h2{
+    font-size: 40px;
+}
 
 /* Header */
 
@@ -77,8 +80,11 @@ nav ul li a:hover{
     width: 100%;
     height: 82vh;
     color: transparent;
-    font-size: 35px;
     transition: color .4s;
+}
+.hero h2{
+    margin-top: 20px;
+    font-size: 100px;
 }
 .hero:hover{
     color: #fffb12;
@@ -87,12 +93,14 @@ nav ul li a:hover{
 /* Main */
 
 .main-1{
+    margin: 20px 0px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .div-main-contenedor{
     width: 70%;
+    margin-top: 40px;
 }
 
 
@@ -102,12 +110,17 @@ nav ul li a:hover{
     align-items: center;
     flex-direction: column;
 }
+.section-info-general h2{
+    margin-bottom: 20px;
+}
 .section-info-general div{
-    width: 60%;
-    font-size: 20px;
+    width: 70%;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 .section-info-general div img{
     float: right;
+    width: 38%;
 }
 
 .info-precisa{
@@ -123,7 +136,7 @@ nav ul li a:hover{
     flex-wrap: wrap;
     padding: 5px;
     border: solid #fff 1px;
-
+    margin-bottom: 20px;
 }
 .info-precisa div img{
     object-fit: contain;
@@ -142,6 +155,7 @@ nav ul li a:hover{
 .info-precisa div ul hr{
     width: 90%;
     color: #fff;
+    margin-bottom: 15px;
 }
 
 
@@ -149,10 +163,14 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+}
+.trailer h2{
+    margin-bottom: 20px;
 }
 .trailer iframe{
-    width: 50%;
-    height: fit-content;
+    width: 30vw;
+    height: 15vw;
 }
 .trailer div{
     display: flex;
@@ -160,9 +178,8 @@ nav ul li a:hover{
     flex-wrap: wrap;
 }
 .trailer div iframe{
-    width: 15%;
+    width: 30%;
     height: fit-content;
-    min-width: 300px;
     
 }
 
@@ -176,6 +193,7 @@ nav ul li a:hover{
     font-size: 40px;
     padding: 10px 0px;
     background-color: #222;
+    border-bottom: solid #fff 1px;
 }
 .main-2 section{
     margin: 30px 0px;
@@ -188,9 +206,14 @@ nav ul li a:hover{
     width: 30%;
     min-width: 320px;
     text-align: center;
-    border: solid #fff 1px;
+    border: solid #888 1px;
     border-radius: 30px 30px 0px 30px;
     color: #000;
+    transition: all .8s;
+}
+.main-2-div:hover{
+    background-color: #fff;
+    border-radius: 30px 30px 0px 0px;
 }
 .main-2-div h3{
     font-size: 25px;
@@ -202,11 +225,21 @@ nav ul li a:hover{
 .main-2-div p{
     margin: 20px;
 }
+.main-2-div a{
+    color: #8500a7;
+    transition: color .6s;
+}
+.main-2-div a:hover{
+    color: #ff207d;
+}
 
 /* Aside */
 
 aside{
     width: 22%;
+}
+aside h3{
+    margin: 20px 0px;
 }
 .div-aside{
     font-size: 14px ;
@@ -227,8 +260,9 @@ aside section{
     display: flex;
     text-align: center;
 	background-color: #000;
-    height: 9vw;
-    width: 9vw;
+    height: 11vw;
+    width: 11vw;
+    margin: 5px 0px;
 	min-width: 80px;
 	justify-content: center;
 	align-items: center;
@@ -275,13 +309,12 @@ aside section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
 
 }
 .armas-reco div div{
 	display: flex;
     justify-content: center;
-	width: 80%;
 	flex-direction: row;
 }
 .div-armas{
@@ -320,6 +353,7 @@ aside section{
     border-radius: 20px;
 	background-size: cover;
 	width: 15vw;
+    margin: 5px 0px;
     height: 10vw;
 	transition: .5s;
 }
@@ -335,12 +369,14 @@ aside section{
 }
 .d-ring{
     background-image: url(../img/d-anillo.jpg);
+    background-position: right;
 }
 .e-devastacion{
     background-image: url(../img/e-devastacion.jfif);
 }
 .b-elden{
     background-image: url(../img/b-elden.jfif);
+    margin-bottom: 20px;
 }
 
 
@@ -519,8 +555,13 @@ footer{
     .section-info-general div{
         width: 100%;
     }
+    .trailer iframe{
+        width: 70vw;
+        height: 35vw;
+    }
     .trailer div iframe{
-        min-width: 150px;
+        width: 55vw;
+        height: 28vw;
     }
     aside{
         width: 80%;
@@ -532,6 +573,9 @@ footer{
     .contenedor-ima:hover{
         width: 42vh;
         height: 42vh;
+    }
+    .armas-reco div div{
+        flex-direction: column;
     }
     .div-armas{
         height: 30vh;
@@ -545,12 +589,12 @@ footer{
     }
     .div-suce{
         font-size: 25px;
-        width: 60%;
-        height: 20vw;
+        width: 90%;
+        height: 40vw;
     }
     .div-suce:hover{
         color: white;
-        width: 63%;
+        width: 94%;
         filter: brightness(.8);
         border: solid white 1px;
     }
