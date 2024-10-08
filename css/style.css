@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    text-align: center;
 }
 .body-1{
     color: #fff;
@@ -47,6 +48,9 @@ header img{
 /* Nav */
 
 nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 200;
     width: 100%;
     height: 3vh;
@@ -123,6 +127,7 @@ nav ul li a:hover{
     float: right;
     width: 38%;
 }
+
 
 .info-precisa{
     display: flex;
@@ -204,6 +209,7 @@ nav ul li a:hover{
 }
 .main-2-div{
     background-color: #cfcfcf;
+    margin-top: 20px;
     width: 30%;
     min-width: 320px;
     text-align: center;
@@ -553,8 +559,12 @@ footer{
     .hero{
         background-size: cover;
     }
+    .hero h2{
+        font-size: 35px;
+    }
     .section-info-general div{
         width: 100%;
+        font-size: 15px;
     }
     .trailer iframe{
         width: 70vw;
@@ -563,6 +573,9 @@ footer{
     .trailer div iframe{
         width: 55vw;
         height: 28vw;
+    }
+    .body-g section div h2{
+        font-size: 20px;
     }
     aside{
         width: 80%;
@@ -579,13 +592,14 @@ footer{
         flex-direction: column;
     }
     .div-armas{
-        height: 30vh;
+        height: 30vw;
         min-width: 100px;
-        width: 30vh;
+        margin-top: 10px;
+        width: 30vw;
     }
     .div-armas:hover{
-        height: 32vh;
-        width: 32vh;
+        height: 32vw;
+        width: 32vw;
 
     }
     .div-suce{
