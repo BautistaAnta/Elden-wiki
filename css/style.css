@@ -69,27 +69,30 @@ nav img{
     display: flex;
     justify-content: center;
 }
-.div-main-contenedor{
+.div-main-cont{
     width: 70%;
     margin-top: 40px;
 }
 
 
-.section-info-general{
+.section-info-g{
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.section-info-general h2{
+.section-info-g h2{
     margin-bottom: 20px;
 }
-.section-info-general div{
+.section-info-g div{
     width: 70%;
-    font-size: 22px;
     margin-bottom: 20px;
 }
-.section-info-general div img{
+.section-info-g div p{
+    font-size: 22px !important;
+
+}
+.section-info-g div img{
     float: right;
     width: 38%;
 }
@@ -103,31 +106,26 @@ nav img{
     text-align: center;
 }
 .info-precisa div{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 5px;
-    border: solid #fff 1px;
-    margin-bottom: 20px;
-}
-.info-precisa div img{
-    object-fit: contain;
-    min-width: 200px;
+    display: flex !important;
+    padding: 5px !important;
+    border: solid #fff 1px !important;
+    margin-bottom: 20px !important;
 }
 .info-precisa div ul{
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 15px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
 }
 .info-precisa div ul li{
-    margin-top: 10px;
+    margin-top: 10px !important;
 }
 .info-precisa div ul hr{
-    width: 90%;
-    color: #fff;
-    margin-bottom: 15px;
+    width: 90% !important;
+    color: #ffffffd0 !important;
+    margin-bottom: 15px !important;
 }
 
 
@@ -213,6 +211,7 @@ aside{
 }
 aside h3{
     margin: 20px 0px;
+    font-size: 15px;
 }
 .div-aside{
     font-size: 14px ;
