@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
     text-align: center;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .body-1{
     color: #fff;
@@ -27,53 +29,18 @@ h2{
 }
 
 /* Header */
-
-header{
-    width: 100%;
-    font-size: 30px;
-    /* font-family: 'goth'; */
-    height: 15vh;
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    border-bottom: solid #fff 1px;
-    
-}
-header img{
-    width:100px;
-    height: 100px;
-}
-
-/* Nav */
-
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 200;
-    width: 100%;
-    height: 3vh;
-    position: sticky;
-    top: 0px;
-    background-color: #000;
+    height: 18vh;
+    background-color: #000 !important;
 }
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.m-t-i{
+    font-size: 30px !important;
 }
-nav ul li a{
-    color: #fff;
-    transition: color .6s;
-    margin: auto 20px;
+nav img{
+    width: 100px;
 }
-nav ul li a:hover{
-    color: #888;
-}
-
 /* Hero */
-.hero{
+.hero-1{
     background-image: url(../img/fondo-header.jpg);
     background-position:center;
     background-repeat: no-repeat;
@@ -88,10 +55,10 @@ nav ul li a:hover{
     color: transparent;
     transition: color .4s;
 }
-.hero h2{
+.hero-1 h2{
     font-size: 100px;
 }
-.hero:hover{
+.hero-1:hover{
     color: #fffb12;
 }
 
@@ -103,27 +70,30 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
 }
-.div-main-contenedor{
+.div-main-cont{
     width: 70%;
     margin-top: 40px;
 }
 
 
-.section-info-general{
+.section-info-g{
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.section-info-general h2{
+.section-info-g h2{
     margin-bottom: 20px;
 }
-.section-info-general div{
+.section-info-g div{
     width: 70%;
-    font-size: 22px;
     margin-bottom: 20px;
 }
-.section-info-general div img{
+.section-info-g div p{
+    font-size: 20px;
+
+}
+.section-info-g div img{
     float: right;
     width: 38%;
 }
@@ -224,6 +194,7 @@ aside{
 }
 aside h3{
     margin: 20px 0px;
+    font-size: 15px;
 }
 .div-aside{
     font-size: 14px ;
@@ -519,18 +490,18 @@ footer{
 }
 
 
-
+@media only screen and (max-width:991px) {
+    nav{
+        height: auto;
+    }
+    nav img{
+        display: none;
+    }
+    .hero{
+        height: 30px;
+    }
+}
 @media only screen and (max-width:700px) {
-    header{
-        font-size: 20px;
-        height: 20vh;
-        align-items: center;
-        justify-content: center;
-    }
-    header img{
-        height: 12vh;
-        width: 12vh;
-    }
     .main-1{
         flex-direction: column;
         align-items: center;
@@ -541,7 +512,10 @@ footer{
     .hero h2{
         font-size: 35px;
     }
-    .section-info-general div{
+    .section-info-g{
+        width: 100%;
+    }
+    .section-info-g div{
         width: 100%;
         font-size: 15px;
     }
@@ -598,24 +572,15 @@ footer{
     }
   }
 @media only screen and (max-width:490px){
-    header{
-        font-size: 15px;
-        flex-direction: column;
-        height: 30vh;
-    }
-    nav{
-        height: 16vh;
-        position: relative;
-    }
-    nav ul{
-        flex-direction: column;
-        align-items: center;
-    }
     .hero{
         height: 54vh;
         background-size: cover;
     }
+    .info-precisa table{
+        width: 90%;
+    }
     footer{
+        font-size: 10px;
         grid-template-columns: repeat(3,1fr);
         grid-auto-rows: 20vh;
     }
