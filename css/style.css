@@ -497,14 +497,15 @@ footer{
     background-position: center top;
     background-attachment: fixed;
     display: flex;
+    width: 100%;
     justify-content: center;
     flex-direction: row;
     color: #cfcfcf;
 }
 .main-personajes__section{
-    width: 58%;
+    width: 100%;
     /* background-color: #00000078; */
-    background-color: #ff4141;
+    background-color: #00000073;
     margin-left: 15px;    
     display: flex;
     flex-direction: column;
@@ -548,9 +549,6 @@ footer{
     background-color: #00000000;
     color: transparent;
 }
-.m-bottom{
-    margin: 50px;
-}
 
 .stiky-aside{
     width: 30vw;
@@ -558,8 +556,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: #000000e4; */
-    background-color: #0011ff;
+    background-color: #000000e4;
     height: 100vh;
     margin-top: 4rem;
     position: sticky;
@@ -574,21 +571,6 @@ footer{
 }
 .stiky-aside h2{
         margin: 20px auto;
-}
-
-@media only screen and (max-height:600px){
-    .stiky-aside{
-        justify-content: center;
-    }
-    .stiky-aside p{
-        font-size: 15px;
-    }
-    .stiky-aside h2{
-        font-size: 23px;
-    }
-    .stiky-aside img{
-        margin: 0px;
-    }
 }
 
 @media only screen and (max-width:1050px) {
@@ -687,7 +669,7 @@ footer{
         align-items: center;
     }
     .stiky-aside{
-        position: static;
+        position: relative;
         width: 65%;
         height: auto;
         margin: 0px;
@@ -704,10 +686,10 @@ footer{
     }
     .main-personajes__section{
         width: 90%;
-        margin: 0;
+        margin: auto;
     }
     .main-personajes__section h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .personajes-div{
         grid-template-columns: repeat(4,19vw);
@@ -740,7 +722,14 @@ footer{
         width: 30vw;
         height: 60vw;
     }
+    .stiky-aside{
+        width: 80%;
+    }
+    .stiky-aside p{
+        font-size: 15px;
+    }
     .personajes-div{
-        grid-template-columns: repeat(4,18vw);
+        grid-template-columns: repeat(3,23vw);
+        grid-auto-rows: 23vw;
     }
 }
