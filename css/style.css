@@ -17,9 +17,6 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-body{
-    color: #fff;
-}
 iframe{
     padding: 5px;
     border: solid #fff 1px;
@@ -31,13 +28,21 @@ h2{
 /* Header */
 nav{
     height: 18vh;
-    background-color: #000 !important;
+    background: rgb(40,40,40);
+    background: linear-gradient(0deg, rgba(40,40,40,1) 0%, rgba(0,0,0,1) 29%);
+}
+.nav-link, .m-t-i{
+    color: white !important;
 }
 .m-t-i{
     font-size: 30px !important;
 }
 nav img{
     width: 100px;
+}
+.focus{
+    color: #add1ff !important;
+    transform: scale(1.1);
 }
 /* Hero */
 .hero-1{
@@ -493,17 +498,21 @@ footer{
     background-attachment: fixed;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     color: #cfcfcf;
 }
 .main-personajes__section{
-    width: 58vw;
-    background-color: #00000078;
+    width: 58%;
+    /* background-color: #00000078; */
+    background-color: #ff4141;
     margin-left: 15px;    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .main-personajes__section h2{
+    color: #eeeeee;
     font-size: 32px;
     margin-bottom: 30px;
     margin-top: 5rem;
@@ -539,10 +548,18 @@ footer{
     background-color: #00000000;
     color: transparent;
 }
+.m-bottom{
+    margin: 50px;
+}
 
 .stiky-aside{
     width: 30vw;
-    background-color: #000000e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #000000e4; */
+    background-color: #0011ff;
     height: 100vh;
     margin-top: 4rem;
     position: sticky;
@@ -559,9 +576,22 @@ footer{
         margin: 20px auto;
 }
 
+@media only screen and (max-height:600px){
+    .stiky-aside{
+        justify-content: center;
+    }
+    .stiky-aside p{
+        font-size: 15px;
+    }
+    .stiky-aside h2{
+        font-size: 23px;
+    }
+    .stiky-aside img{
+        margin: 0px;
+    }
+}
 
-
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:1050px) {
     nav{
         height: auto;
     }
@@ -571,8 +601,18 @@ footer{
     .hero{
         height: 100vh;
     }
-    
-@media only screen and (max-width:700px) {
+
+    .main-personajes__section{
+        width: 100%;
+    }
+    .stiky-aside{
+        margin-left: 15px;
+    }
+    .stiky-aside p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:730px) {
     .main-1{
         flex-direction: column;
         align-items: center;
@@ -641,6 +681,38 @@ footer{
     .grid-container{
         grid-auto-rows: 100px;
     }
+    .main-personajes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stiky-aside{
+        position: static;
+        width: 65%;
+        height: auto;
+        margin: 0px;
+
+    }
+    .stiky-aside img{
+        margin-top: 25px;
+    }
+    .stiky-aside p{
+        font-size: 20px;
+    }
+    .stiky-aside h2{
+        font-size: 25px;
+    }
+    .main-personajes__section{
+        width: 90%;
+        margin: 0;
+    }
+    .main-personajes__section h2{
+        font-size: 25px;
+    }
+    .personajes-div{
+        grid-template-columns: repeat(4,19vw);
+        grid-auto-rows: 19vw;
+    }
   }
 @media only screen and (max-width:490px){
     .hero{
@@ -668,5 +740,7 @@ footer{
         width: 30vw;
         height: 60vw;
     }
-}
+    .personajes-div{
+        grid-template-columns: repeat(4,18vw);
+    }
 }
