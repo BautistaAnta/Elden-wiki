@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     cursor: -moz-zoom-in;
     margin: 0;
     padding: 0;
@@ -40,9 +41,41 @@ nav{
 nav img{
     width: 100px;
 }
+nav img:hover{
+    animation-name: vueltitas;
+    animation-duration: 6s;
+    animation-direction: initial;
+
+}
+@keyframes vueltitas{
+    20%{
+        transform: scale(.7);
+        translate: -20px 20px;
+    }
+    50%{
+        transform:scaleY(.6) ;
+        translate: -20px 30px;
+    }
+    75%{
+        translate: -20px 0px;
+        transform: rotateZ(50deg);
+    }
+    85%{
+        transform: rotateZ(-360deg);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 .focus{
     color: #add1ff !important;
     transform: scale(1.1);
+}
+.focus-n{
+    color: #add1ff !important;
+}
+.white{
+    color: #fff !important;
 }
 /* Hero */
 .hero-1{
@@ -58,13 +91,14 @@ nav img{
     width: 100%;
     height: 82vh;
     color: transparent;
-    transition: color .4s;
+    transition: color,text-shadow .4s;
 }
 .hero-1 h2{
     font-size: 100px;
 }
 .hero-1:hover{
     color: #fffb12;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ffd900, 0 0 30px #ffd900, 0 0 40px #ffd900, 0 0 55px #ffd900, 0 0 50px #ffd900;
 }
 
 /* Main */
@@ -503,14 +537,21 @@ footer{
     color: #cfcfcf;
 }
 .main-personajes__section{
-    width: 100%;
-    /* background-color: #00000078; */
-    background-color: #00000073;
-    margin-left: 15px;    
+    width: 65%;
+    background-color: #00000078;
+    margin-left: 15px;
+    margin-bottom: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.main-personajes__section section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
 .main-personajes__section h2{
     color: #eeeeee;
@@ -556,7 +597,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #000000e4;
+    background-color: #000000a9;
     height: 100vh;
     margin-top: 4rem;
     position: sticky;
@@ -573,6 +614,129 @@ footer{
         margin: 20px auto;
 }
 
+/* Items */
+    .body-i{
+        background-image: url(../img/items/items-fondo.jpg);
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .main-items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .main-items hr{
+        width: 70%;
+        color: #bdbdbd;
+    }
+    .main-items section{
+        background-color: #0000003b;
+        color: #fff;
+        width: 90%;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-items{
+        display: grid !important;
+        grid-template-columns: repeat(8,10vw);
+        grid-auto-rows: 10vw;
+        gap: 10px;
+    }
+    .div-items div{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .div-items div a{
+        position: absolute;
+        z-index: 500;
+        border: transparent;
+        width: 100%;
+        height: 100%;
+        background-color: #0000003b;
+        transition: all .7s;
+    }
+    .ceniza-afilada:hover{
+        border: solid #c1c1c1 1px;
+    }
+    .ceniza-calidad:hover{
+        border: solid #848484 1px;
+    }
+    .ceniza-pesado:hover{
+        border: solid #000000 1px;
+    }
+    .ceniza-fuego:hover{
+        border: solid #ab3300 1px;
+    }
+    .ceniza-llameante:hover{
+        border: solid #ba4b14 1px;
+    }
+    .ceniza-magica:hover{
+        border: solid #1fbada 1px;
+    }
+    .ceniza-frio:hover{
+        border: solid #95ffff 1px;
+    }
+    .ceniza-sangre:hover{
+        border: solid #ff1e1e 1px;
+    }
+    .ceniza-sagrada:hover{
+        border: solid #b9bc00 1px;
+    }
+    .ceniza-rayo:hover{
+        border: solid #ffce0b 1px;
+    }
+    .ceniza-veneno:hover{
+        border: solid #22b90e 1px;
+    }
+    .ceniza-oculto{
+        border: solid #460000 1px;
+
+    }
+    .div-items div a:hover{
+        background-color: transparent;
+    }
+    .div-items div img{
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    main .h-section{
+        margin-top: 30px;
+    }
+    .h{
+        grid-template-columns: repeat(10,7vw);
+        grid-auto-rows: 7vw ;
+    }
+    .agrandar-d{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .volver-inicio{
+        width: 5vw;
+        z-index: 1000;
+        min-width: 50px;
+        height: auto;
+        position: fixed;
+        right: 20px;
+        bottom: 40px;
+    }
+    .volver-inicio:hover{
+        animation-name: palpitar;
+        animation-timing-function: initial;
+        animation-duration: inherit;
+        animation-iteration-count: infinite;
+
+    }
 @media only screen and (max-width:1050px) {
     nav{
         height: auto;
@@ -592,6 +756,16 @@ footer{
     }
     .stiky-aside p{
         font-size: 12px;
+    }
+    .main-items section{
+        width: 100%;
+    }
+    .div-items{
+        grid-template-columns: repeat(6,15vw);
+        grid-auto-rows: 15vw;
+    }
+    h{
+        grid-template-columns: repeat(5,18vw) !important;
     }
 }
 @media only screen and (max-width:730px) {
@@ -672,7 +846,7 @@ footer{
         position: relative;
         width: 65%;
         height: auto;
-        margin: 0px;
+        margin: 30px 0px ;
 
     }
     .stiky-aside img{
@@ -686,7 +860,7 @@ footer{
     }
     .main-personajes__section{
         width: 90%;
-        margin: auto;
+        margin: 30px 0px;
     }
     .main-personajes__section h2{
         font-size: 20px;
@@ -694,6 +868,11 @@ footer{
     .personajes-div{
         grid-template-columns: repeat(4,19vw);
         grid-auto-rows: 19vw;
+    }
+    .div-items{
+        grid-template-columns: repeat(6,15vw);
+        grid-auto-rows: 15vw;
+        gap: 3px;
     }
   }
 @media only screen and (max-width:490px){
@@ -730,6 +909,10 @@ footer{
     }
     .personajes-div{
         grid-template-columns: repeat(3,23vw);
+        grid-auto-rows: 23vw;
+    }
+    .div-items{
+        grid-template-columns:repeat(4,23vw) ;
         grid-auto-rows: 23vw;
     }
 }
