@@ -1,0 +1,33 @@
+// Variables
+
+    $color-primario: #fff;
+    $color-secundario: #1e1e1e;
+    $color-terciario: #add1ff;
+    $color-cuaternario: #000000;
+    $fondo-oscurito: #282828;
+    $color-claro: #cdcdcd;
+
+// Listas
+
+    $colores: #fff, #1e1e1e, #add1ff, #000000, #282828;
+
+
+// Extends
+
+%alinear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%linea{
+    color: $color-claro;
+    width: 80%;
+}
+
+// Mixin
+
+@mixin titulo($tamaño, $color, $mar-bottom){
+    font-size: $tamaño;
+    color: $color;
+    margin-bottom: $mar-bottom;
+}

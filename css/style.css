@@ -712,31 +712,22 @@ footer{
     main .h-section{
         margin-top: 30px;
     }
-    .h{
+    .h-section div{
         grid-template-columns: repeat(10,7vw);
         grid-auto-rows: 7vw ;
     }
-    .agrandar-d{
+    .agrandar{
         grid-column: span 2;
         grid-row: span 2;
     }
 
     .volver-inicio{
         width: 5vw;
-        z-index: 1000;
-        min-width: 50px;
-        height: auto;
         position: fixed;
         right: 20px;
         bottom: 40px;
     }
-    .volver-inicio:hover{
-        animation-name: palpitar;
-        animation-timing-function: initial;
-        animation-duration: inherit;
-        animation-iteration-count: infinite;
 
-    }
 @media only screen and (max-width:1050px) {
     nav{
         height: auto;
@@ -764,7 +755,7 @@ footer{
         grid-template-columns: repeat(6,15vw);
         grid-auto-rows: 15vw;
     }
-    h{
+    .h{
         grid-template-columns: repeat(5,18vw) !important;
     }
 }
