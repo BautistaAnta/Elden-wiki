@@ -49,6 +49,22 @@
                     p{
                         width: 90%;
                         color: #fff;
+                        display: block;
+                    }
+                    a{
+                        padding: 7px;
+                        color: map-get($boton , color);
+                        border-radius: 15px;
+                        border: solid $color-terciario 1px;
+                        transition: 1s;
+                        margin-bottom: 15px;
+                        &:hover{
+                            background-color: $color-terciario;
+                            color: #000;
+                        }
+                        &:focus{
+                            background-color: gold;
+                        }
                     }
                 }
             }
@@ -74,8 +90,7 @@
             }
             p{
                 width: 90%;
-                font-size: 18px;
-                @include titulo (15px, #fff, 0px)
+                @include titulo (13px, #fff, 0px)
             }
             .gracia{
                 width: 5vw;

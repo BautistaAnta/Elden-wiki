@@ -24,6 +24,14 @@
     width: 80%;
 }
 
+// Maps
+
+$boton: (
+  color: #add1ff,
+  borde: solid #add1ff 1px,
+  padding: 7px,
+);
+
 // Mixin
 
 @mixin titulo($tamaño, $color, $mar-bottom){

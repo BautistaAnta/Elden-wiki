@@ -93,7 +93,20 @@ nav {
             height: auto; }
         .body-m main section div .tarjeta p {
           width: 90%;
-          color: #fff; }
+          color: #fff;
+          display: block; }
+        .body-m main section div .tarjeta a {
+          padding: 7px;
+          color: #add1ff;
+          border-radius: 15px;
+          border: solid #add1ff 1px;
+          transition: 1s;
+          margin-bottom: 15px; }
+          .body-m main section div .tarjeta a:hover {
+            background-color: #add1ff;
+            color: #000; }
+          .body-m main section div .tarjeta a:focus {
+            background-color: gold; }
   .body-m main aside {
     width: 30%;
     background-color: #000000ba;
@@ -114,8 +127,7 @@ nav {
       margin-bottom: 20px; }
     .body-m main aside p {
       width: 90%;
-      font-size: 18px;
-      font-size: 15px;
+      font-size: 13px;
       color: #fff;
       margin-bottom: 0px; }
     .body-m main aside .gracia {
@@ -219,13 +231,38 @@ footer {
       padding: 5px;
       border: solid #fff 1px; }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1150px) {
+  .body-m main {
+    flex-direction: column;
+    align-items: center; }
+    .body-m main aside {
+      position: relative;
+      width: 60%;
+      height: auto; }
+      .body-m main aside h1 {
+        font-size: 30px; }
+      .body-m main aside p {
+        font-size: 20px; }
+      .body-m main aside .gracia {
+        width: 40%; }
+    .body-m main section {
+      width: 100%; }
+      .body-m main section div {
+        width: 100%; }
+        .body-m main section div .tarjeta {
+          width: 80%; }
   nav {
     height: auto; }
     nav img {
       display: none; } }
 
 @media only screen and (max-width: 730px) {
+  .body-m main aside {
+    width: 96%; }
+  .body-m main section {
+    flex-direction: column; }
+    .body-m main section div {
+      width: 100%; }
   .body-g section {
     grid-auto-rows: 100px; } }
 
