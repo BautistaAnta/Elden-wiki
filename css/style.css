@@ -133,7 +133,7 @@ nav img:hover{
     font-size: 20px;
 
 }
-.section-info-g div img{
+.section-info-g__div img{
     float: right;
     margin: 0px 0px 10px 10px;
     width: 38%;
@@ -185,11 +185,13 @@ nav img:hover{
     width: 100%;
     text-align: center;
 }
+.main-2 .mecanicas{
+    background-color: #222;
+    border-bottom: solid #fff 1px;
+}
 .main-2 h2{
     font-size: 40px;
     padding: 10px 0px;
-    background-color: #222;
-    border-bottom: solid #fff 1px;
 }
 .main-2 section{
     margin: 30px 0px;
