@@ -135,6 +135,7 @@ nav img:hover{
 }
 .section-info-g div img{
     float: right;
+    margin: 0px 0px 10px 10px;
     width: 38%;
 }
 
@@ -164,6 +165,7 @@ nav img:hover{
 .trailer iframe{
     width: 30vw;
     height: 15vw;
+    margin-bottom: 20px;
 }
 .trailer div{
     display: flex;
@@ -173,6 +175,7 @@ nav img:hover{
 .trailer div iframe{
     width: 30%;
     height: fit-content;
+    margin-bottom: 20px;
     
 }
 
@@ -717,6 +720,16 @@ footer{
         grid-template-columns: repeat(10,7vw);
         grid-auto-rows: 7vw ;
     }
+    .cont-titulo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cont-titulo img{
+        width: 50px;
+        height: auto;
+        filter: brightness(2);
+    }
     .agrandar{
         grid-column: span 2;
         grid-row: span 2;
@@ -725,6 +738,7 @@ footer{
     .volver-inicio{
         width: 5vw;
         position: fixed;
+        min-width: 50px;
         right: 20px;
         bottom: 40px;
     }
@@ -872,6 +886,9 @@ footer{
         height: 54vh;
         background-size: cover;
     }
+    .section-info-g div p{
+        font-size: 10px;
+    }
     .info-precisa table{
         width: 90%;
     }
@@ -902,6 +919,10 @@ footer{
     .personajes-div{
         grid-template-columns: repeat(3,23vw);
         grid-auto-rows: 23vw;
+    }
+    .h-section div{
+        grid-template-columns: repeat(5,17vw);
+        grid-auto-rows: 15vw ;
     }
     .div-items{
         grid-template-columns:repeat(4,23vw) ;
