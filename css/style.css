@@ -738,6 +738,7 @@ footer{
     .volver-inicio{
         width: 5vw;
         position: fixed;
+        z-index: 1500;
         min-width: 50px;
         right: 20px;
         bottom: 40px;

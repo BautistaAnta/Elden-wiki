@@ -1,1 +1,4 @@
-Este es un proyecto que intenta ser la mayor wiki de elden ring en el mundo siendo un desarrollador individual.
+
+Soy un estudiante de 16 años apasionado por el desarrollo web, y además de mis estudios en la escuela secundaria, estoy trabajando en un proyecto que me emociona enormemente: crear la página web más grande dedicada a "Elden Ring". Aunque sé que será un desafío hacerlo por mi cuenta, estoy decidido a aportar un recurso valioso para la comunidad de jugadores.
+
+La página tiene como objetivo informar sobre datos curiosos del juego y descubrir secretos ocultos. Quiero ofrecer guías completas sobre cómo encontrar todos los ítems y explicar las diversas mecánicas que hacen que "Elden Ring" sea tan especial. Este proyecto no solo representa mi interés por el desarrollo web, sino también mi amor por el juego y el deseo de ayudar a otros a disfrutarlo al máximo. Estoy entusiasmado con la idea de compartir mis conocimientos y crear un espacio donde los jugadores puedan aprender y explorar juntos.
